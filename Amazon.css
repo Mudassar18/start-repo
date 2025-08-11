@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: #056727;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+    }
+    .search-bar input {
+      border-radius: 0;
+    }
+    .sidebar h6 {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .sidebar a {
+      font-size: 14px;
+      color: #007185;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    .product-card img {
+      height: 150px;
+      object-fit: cover;
+    }
+    .product-card .card-title {
+      font-size: 14px;
+    }
+    .product-card .card-text {
+      font-size: 14px;
+      color: #B12704;
+    }
+    .best-seller {
+      background-color: #f69935;
+      color: white;
+      font-size: 12px;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar py-2 px-3">
+    <div class="container-fluid d-flex align-items-center">
+      <a href="#" class="navbar-brand text-white"><strong>Amazon</strong></a>
+      <form class="search-bar d-flex flex-grow-1 mx-3">
+        <select class="form-select" style="max-width: 100px;">
+          <option>All</option>
+        </select>
+        <input type="text" class="form-control" placeholder="Search">
+        <button class="btn btn-warning"><i class="fas fa-search"></i></button>
+      </form>
+      <div class="d-flex">
+        <a href="#" class="me-3">Hello, Sign In</a>
+        <a href="#" class="me-3"><i class="fas fa-flag-usa"></i></a>
+        <a href="#" class="me-3">Returns & Orders</a>
+        <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-dark text-white py-2">
+    <div class="container">
+      <a href="#" class="me-3 text-white">All</a>
+      <a href="#" class="me-3 text-white">Today's Deals</a>
+      <a href="#" class="me-3 text-white">Customer Service</a>
+      <a href="#" class="me-3 text-white">Registry</a>
+      <a href="#" class="me-3 text-white">Gift Cards</a>
+      <a href="#" class="me-3 text-white">Sell</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <aside class="col-md-3">
+        <h6>Department</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Women's Fashion</a></li>
+          <li><a href="#">Everyday Bras</a></li>
+          <li><a href="#">Women's Jeans</a></li>
+          <li><a href="#">Men's Shirts</a></li>
+        </ul>
+        <h6>Price</h6>
+        <input type="range" class="form-range">
+        <h6>Deals & Discounts</h6>
+        <p>Save on various categories!</p>
+      </aside>
+
+      <!-- Product Section -->
+      <div class="col-md-9">
+        <h6>Results</h6>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card product-card">
+              <span class="best-seller">Best Seller</span>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi2Z-73EHAKqDGmlwyIMy4t2H70HpCc8ZnMg&s" class="card-img-top" alt="Product">
+              <div class="card-body">
+                <h6 class="card-title">Nine West Women's Strap Watch</h6>
+                <p class="card-text">$16.84</p>
+                <p class="text-muted">Delivery: Fri, Dec 20</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card product-card">
+              <span class="best-seller">Best Seller</span>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeek3wyBjKdSYfuoZxh7J62ZJSFLms9GU97w&s" class="card-img-top" alt="Product">
+              <div class="card-body">
+                <h6 class="card-title">Laser Level Tool</h6>
+                <p class="card-text">$9.95</p>
+                <p class="text-muted">Delivery: Fri, Dec 20</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card product-card">
+              <img src="https://original.pk/cdn/shop/products/41YMG0cziRL.jpg?v=1646267893" class="card-img-top" alt="Product">
+              <div class="card-body">
+                <h6 class="card-title">Long Sleeve Tunic</h6>
+                <p class="card-text">$19.99</p>
+                <p class="text-muted">Delivery: Fri, Dec 20</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card product-card">
+              <img src="https://importedgear.pk/cdn/shop/products/5-Pairs-Thicken-Wool-Socks-Men-Keep-Warm-Winter-Socks-High-Quality-Towel-Cotton-Christmas-Gift_jpg_Q90_jpg.jpg?v=1670552931" class="card-img-top" alt="Product">
+              <div class="card-body">
+                <h6 class="card-title">Warm Wool Socks</h6>
+                <p class="card-text">$8.98</p>
+                <p class="text-muted">Delivery: Fri, Dec 20</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3 mt-4">
+    <div class="container text-center">
+      <p>© 2024 Amazon Clone. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<script>
+  // 1. Toggle Sidebar Visibility
+  function toggleSidebar() {
+    const sidebar = document.querySelector('aside');
+    sidebar.style.display = sidebar.style.display === 'none' ? 'block' : 'none';
+  }
+
+  // 2. Search Functionality Alert
+  function performSearch() {
+    const searchQuery = document.querySelector('.search-bar input').value;
+    alert(`You searched for: ${searchQuery}`);
+  }
+
+  // 3. Change Theme
+  function toggleTheme() {
+    document.body.classList.toggle('dark-theme');
+  }
+
+  // 4. Add to Cart Alert
+  function addToCart(productName) {
+    alert(`${productName} has been added to your cart.`);
+  }
+
+  // 5. Update Range Value
+  function updateRangeValue() {
+    const range = document.querySelector('.form-range');
+    alert(`Selected Price Range: $${range.value}`);
+  }
+
+  // 6. Countdown Timer for Deals
+  function startCountdown() {
+    const timerElement = document.getElementById('countdown');
+    let seconds = 60;
+    const interval = setInterval(() => {
+      if (seconds > 0) {
+        seconds--;
+        timerElement.textContent = `Time left for deals: ${seconds}s`;
+      } else {
+        clearInterval(interval);
+        timerElement.textContent = "Deals expired!";
+      }
+    }, 1000);
+  }
+
+  // 7. Display Current Time
+  function displayCurrentTime() {
+    const timeElement = document.getElementById('current-time');
+    const now = new Date();
+    timeElement.textContent = now.toLocaleTimeString();
+  }
+
+  // 8. Highlight Best Sellers
+  function highlightBestSellers() {
+    const bestSellers = document.querySelectorAll('.best-seller');
+    bestSellers.forEach(badge => {
+      badge.style.backgroundColor = 'gold';
+      badge.style.color = 'black';
+    });
+  }
+
+  // 9. Toggle Product Card Visibility
+  function toggleProductCards() {
+    const productCards = document.querySelectorAll('.product-card');
+    productCards.forEach(card => {
+      card.style.display = card.style.display === 'none' ? 'block' : 'none';
+    });
+  }
+
+  // 10. Display Welcome Message
+  function displayWelcomeMessage() {
+    alert('Welcome to Amazon Clone!');
+  }
+
+  // Call some functions on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    displayWelcomeMessage();
+    displayCurrentTime();
+    startCountdown();
+  });
+</script>
