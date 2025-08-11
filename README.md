@@ -1,4 +1,4 @@
-# start-repo
+Amazon Clone Project
 Amazon Clone Project
 This project is a front-end Amazon-inspired e-commerce website built with HTML, CSS, Bootstrap, and JavaScript. It replicates the basic structure and look of Amazon’s homepage, including:
 
